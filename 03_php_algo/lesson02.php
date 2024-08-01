@@ -49,6 +49,7 @@ if ($yen < 150) {
 }
 
 
+
 // echo floor(9850 / 5000);
 // echo floor(4850 / 1000);
 // echo floor(850 / 500);

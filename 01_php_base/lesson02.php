@@ -10,4 +10,3 @@ echo "</br>";
 echo "{$grape_val}円のぶどうを{$grape_qua}個。";
 echo "</br>";
 echo "合計は{$sum}円です。";
-?>

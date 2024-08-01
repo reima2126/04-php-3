@@ -8,4 +8,3 @@ $tanaka = [
 echo $tanaka["name"];
 echo "</br>";
 echo "{$tanaka["age"]}・{$tanaka["gender"]}";
-?>

@@ -170,15 +170,7 @@ function judge($cards)
             }
         }
 
-
-
-
-
         $suits = array_column($cards, "suit");
-
-
-
-
         sort($numbers);
         $is_straight = false;
         $is_flush = false;

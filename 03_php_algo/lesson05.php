@@ -31,7 +31,7 @@ function judge($cards)
 
     // 不正チェック
     $valid_suits = ['heart', 'club', 'diamond', 'spade', 'joker'];
-    $valid_numbers = range(0, 13); // 0を含める
+    $valid_numbers = range(0, 13);
     $card_combinations = [];
 
     $is_valid = true;
@@ -53,15 +53,12 @@ function judge($cards)
     }
 
     if ($is_valid) {
-        // ジョーカーの数をカウント
         $joker_count = 0;
         foreach ($cards as $card) {
             if ($card['suit'] == 'joker' && $card['number'] == 0) {
                 $joker_count++;
             }
         }
-
-        // ジョーカー以外のカードを取得
         $non_joker_cards = array_filter($cards, function ($card) {
             return !($card['suit'] == 'joker' && $card['number'] == 0);
         });
